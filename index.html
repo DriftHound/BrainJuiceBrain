@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainJuice - Creative Vision. AI Precision.</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BrainJuice",
+      "url": "https://brainjuicebrain.netlify.app",
+      "description": "BrainJuice is a premier digital creative service that fuses 25+ years of human design expertise with cutting-edge AI precision.",
+      "address": { "@type": "PostalAddress", "addressCountry": "UK" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI-Powered Creative Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Platform Creation", "serviceType": "Web Development & Design" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Strategy & Design", "serviceType": "Branding and Identity Design" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Assisted Content", "serviceType": "Content Creation and Strategy" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing & SEO", "serviceType": "Search Engine Optimization" }}
+        ]
+      }
+    }
+    </script>
+</head>
+<body data-theme="dark">
+    <!-- SVG Filters for Glitch Effects -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="glitch-filter" x="0%" y="0%" width="100%" height="100%">
+                <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+                <feOffset in="SourceGraphic" dx="2" dy="0" result="r"/>
+                <feOffset in="SourceGraphic" dx="-2" dy="0" result="b"/>
+                <feBlend mode="screen" in="r" in2="SourceGraphic" result="rb"/>
+                <feBlend mode="screen" in="b" in2="rb"/>
+            </filter>
+            <filter id="scramble-filter">
+                <feTurbulence baseFrequency="0.9" numOctaves="4" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brainjuice-logo">
+                    <div class="bj-logo-text">
+                        <span class="bj-brain">Brain</span><span class="bj-juice">Juice</span>
+                    </div>
+                    <div class="bj-tagline">AI POWERED CREATIVITY ON TAP</div>
+                </div>
+                <nav class="nav">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="brainjuice-logo">
+                <div class="bj-logo-text">
+                    <span class="bj-brain">Brain</span><span class="bj-juice">Juice</span>
+                </div>
+                <div class="bj-tagline">AI POWERED CREATIVITY ON TAP</div>
+            </div>
+            <h1 class="hero-headline">creative vision. ai precision. proven results.</h1>
+            <p class="hero-description">We transform ambitious visions into digital reality through the perfect fusion of human creativity and AI innovation.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flawless Mode Debrief Section (Hidden by default) -->
+    <section class="section section-alt-bg" id="flawless-debrief" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Cost of Instability</h2>
+                <p class="section-subtitle">The "Unstable Experience" you just saw was a simulation of common web flaws. Here's a breakdown of the real-world financial impact of those issues, based on 2024 UK business data.</p>
+            </div>
+            
+            <div class="debrief-grid">
+                <div class="debrief-category">
+                    <h3 class="debrief-category-title">UX & Conversion Flow Errors</h3>
+                    <p class="debrief-stat">Simulated via broken forms and navigation, <strong>26% of shoppers abandon checkout</strong> due to a process being too long or complicated. For a small business, this can equate to <strong>£20k-£30k lost annually</strong> from form errors alone.</p>
+                </div>
+                
+                <div class="debrief-category">
+                    <h3 class="debrief-category-title">Performance & Technical Errors</h3>
+                    <p class="debrief-stat">Simulated via slow loading elements, a <strong>1-second page load delay can reduce conversions by 7%</strong>. A mobile site taking longer than 3 seconds to load will lose <strong>53% of its users</strong>.</p>
+                </div>
+                
+                <div class="debrief-category">
+                    <h3 class="debrief-category-title">Brand & Content Integrity Errors</h3>
+                    <p class="debrief-stat">Simulated via inconsistent fonts and branding, these issues erode user trust. For larger enterprises, this can lead to <strong>£300k-£800k in lost revenue</strong> annually as perceived credibility drops.</p>
+                </div>
+            </div>
+
+            <!-- ROI Calculator -->
+            <div class="roi-calculator">
+                <h3 class="calculator-title">Calculate Your Potential ROI</h3>
+                <form id="roi-calculator-form" class="calculator-form">
+                    <label for="visitor-input" class="calculator-label">Monthly Website Visitors:</label>
+                    <input type="number" id="visitor-input" class="calculator-input" placeholder="e.g., 10000" min="1">
+                    <button type="submit" class="btn btn-primary calculator-button">Calculate Potential Loss</button>
+                </form>
+                <div id="calculator-result" class="calculator-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">An Interactive Diagnostic</h2>
+                <p class="section-subtitle">Click "Learn More" on any service to see the common problem we're built to solve.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="web">
+                    <div class="service-icon">
+                        <span>WEB</span>
+                    </div>
+                    <h3 class="service-title">Digital Platform Creation</h3>
+                    <p class="service-description">Solves unreliable websites that suffer from broken links, non-responsive layouts, and poor user experience.</p>
+                    <a href="#" class="service-link glitch-trigger" data-target="web">Learn More →</a>
+                </div>
+                
+                <div class="service-card" data-service="brand">
+                    <div class="service-icon">
+                        <span>BRAND</span>
+                    </div>
+                    <h3 class="service-title">Brand Strategy & Design</h3>
+                    <p class="service-description">Fixes 'brand identity crisis' where inconsistent visuals erode user trust, ensuring every element works in harmony.</p>
+                    <a href="#" class="service-link glitch-trigger" data-target="brand">Learn More →</a>
+                </div>
+                
+                <div class="service-card" data-service="content">
+                    <div class="service-icon">
+                        <span>AI</span>
+                    </div>
+                    <h3 class="service-title">AI-Assisted Content</h3>
+                    <p class="service-description">Addresses 'uncanny valley' content, combining AI efficiency with human direction for an authentic brand voice.</p>
+                    <a href="#" class="service-link glitch-trigger" data-target="content">Learn More →</a>
+                </div>
+                
+                <div class="service-card" data-service="seo">
+                    <div class="service-icon">
+                        <span>SEO</span>
+                    </div>
+                    <h3 class="service-title">Digital Marketing & SEO</h3>
+                    <p class="service-description">Solves the 'invisible website' problem by optimizing for search and accessibility so you're seen and heard by everyone.</p>
+                    <a href="#" class="service-link glitch-trigger" data-target="seo">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-alt-bg" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The BrainJuice Advantage</h2>
+            </div>
+            
+            <div class="about-content">
+                <p class="about-paragraph">Founded on the principle that AI should amplify human creativity, not replace it, BrainJuice represents a unique fusion of proven artistry and intelligent enhancement.</p>
+                <p class="about-paragraph scramble-text">With 25 years of creative industry experience, we understand what actually works beyond the trends. Our AI integration doesn't just follow best practices—it creates them.</p>
+                
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <div class="metric-number">25+</div>
+                        <div class="metric-label">Years Experience</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-number">300%</div>
+                        <div class="metric-label">Potential UX ROI</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">Bespoke Solutions</div>
+                    </div>
+                </div>
+                
+                <div class="loading-message" style="display: none;">
+                    <p>Buffering... a sign of poor optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agencies Section -->
+    <section class="section" id="agencies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">For Agencies & Studios</h2>
+                <p class="section-subtitle">Need a specialist for an ambitious project? Facing a capacity overflow? We provide expert, white-label partnership for agencies seeking a reliable extension of their team. We integrate seamlessly into your workflow to deliver exceptional results under your brand.</p>
+                <a href="#contact" class="btn btn-primary">Discuss a Partnership</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt-bg" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Transform Your Vision?</h2>
+                <p class="section-subtitle">Bring us your brief, your ambitious goal, your 'impossible' project. We'll forge a distinct, potent solution tailored precisely to you.</p>
+                <a href="mailto:hello@brainjuice.dev" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 BrainJuice</p>
+                </div>
+                <div class="footer-right">
+                    <button id="theme-toggle" class="theme-toggle">Switch to Light Mode</button>
+                    <button id="flawless-toggle" class="flawless-toggle">Experience Flawless Mode</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Glitch Spotlight Overlay -->
+    <div class="glitch-spotlight-overlay" id="glitch-spotlight-overlay">
+        <div class="glitch-spotlight-card">
+            <div class="flipper-card" id="flipper-card">
+                <div class="flipper-content">
+                    <!-- Front: Glitch Display -->
+                    <div class="flipper-front">
+                        <div class="glitch-display-card">
+                            <div class="glitch-content" id="glitch-content">
+                                <!-- Dynamic glitch content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Back: Flawless Modal -->
+                    <div class="flipper-back">
+                        <div class="flawless-modal-card">
+                            <div class="modal-header">
+                                <h3 id="flawless-modal-title">Modal Title</h3>
+                                <button class="modal-close" id="flawless-modal-close-btn">&times;</button>
+                            </div>
+                            <div class="modal-content" id="flawless-modal-content">
+                                <!-- Dynamic modal content will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Simulation Button -->
+    <div class="exit-simulation" id="exit-simulation" style="display: none;">
+        <button class="exit-button" title="SYSTEM NOTE: The 'Unstable Experience' simulation is currently active. This is a deliberate demonstration of common web flaws. Click to load the FLAWLESS_MODE build and see the high-performance solution.">
+            [EXIT_SIMULATION]
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/brainjuice-system.js"></script>
+</body>
+</html>
